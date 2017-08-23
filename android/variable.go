@@ -20,6 +20,8 @@ import (
 	"runtime"
 	"strings"
 
+	"mdroid/soong/android"
+
 	"github.com/google/blueprint/proptools"
 )
 
@@ -124,6 +126,9 @@ type variableProperties struct {
 		Device_support_hwfde_perf struct {
 			Cflags []string
 		}
+
+		// include MDroid variables
+		MDroid android.Product_variables
 	} `android:"arch_variant"`
 }
 
@@ -242,6 +247,9 @@ type productVariables struct {
 	PgoAdditionalProfileDirs []string `json:",omitempty"`
 
 	VendorVars map[string]map[string]string `json:",omitempty"`
+
+	// include MDroid variables
+	MDroid android.ProductVariables
 }
 
 func boolPtr(v bool) *bool {
