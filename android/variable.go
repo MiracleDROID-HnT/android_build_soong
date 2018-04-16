@@ -20,7 +20,7 @@ import (
 	"runtime"
 	"strings"
 
-	"elixir/soong/android"
+	"mdroid/soong/android"
 
 	"github.com/google/blueprint/proptools"
 )

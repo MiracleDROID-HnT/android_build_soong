@@ -6,7 +6,7 @@ build = [
 
 subdirs = [
     "build/soong",
-    "vendor/elixir/build/soong",
+    "vendor/mdroid/build/soong",
 ]
 
 optional_subdirs = [
