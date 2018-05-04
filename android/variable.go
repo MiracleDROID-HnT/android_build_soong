@@ -97,8 +97,8 @@ type variableProperties struct {
 			Enabled *bool
 		}
 
-		// include Custom variables
-		*android.Product_variables
+		// include Mdroid variables
+		Mdroid android.Product_variables
 	} `android:"arch_variant"`
 }
 
@@ -176,8 +176,8 @@ type productVariables struct {
 
 	BoardUsesQTIHardware *bool `json:",omitempty"`
 
-	// include Custom variables
-	*android.ProductVariables
+	// include Mdroid variables
+	Mdroid android.ProductVariables
 }
 
 func boolPtr(v bool) *bool {
